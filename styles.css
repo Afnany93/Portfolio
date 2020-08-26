@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+html{
+    font-size: 10px;
+    background: #FAFBFF;
+}
+
+body{
+    font-family: 'Baloo Tamma 2','Cairo', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+p{
+    font-size: 2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    padding: 5rem 0;
+    margin: 0 15rem;
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+/* Landing */
+/* .landing{
+    width: 100%;
+} */
+
+.landing.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-header{
+    text-align: center;
+    line-height: 0;
+    margin-bottom: 0rem;
+}
+
+.svg-img{
+    display: flex;
+    flex: ;
+    /* margin-left: -3rem; */
+    margin-right: auto;
+    width: 100%;
+}
+
+.nav-link{
+    color: black;
+    padding: .5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-list{
+    margin: -50rem -20rem 0 0;
+    float: right;
+    rotate: -90deg;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    cursor: pointer;
+}
+
+
+/* Case Studies */
+.portfolio-item{
+    display: flex;
+    align-items: center;
+}
+
+/* About */
+.about h1{
+    
+}
+
+.about h2{
+    letter-spacing: 1.25rem;
+}
+
+/* footer */
+footer{
+	color: #000;
+}
+.copyright{
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #C5D6FE, #EDC7FB);
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+.up i{
+    color: #ad90b8;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
