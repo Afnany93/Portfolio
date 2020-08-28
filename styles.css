@@ -1,5 +1,9 @@
+/* Codepen for Buttons https://codepen.io/JavaScriptJunkie/pen/pPRooV */
+
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Reusable Styles */
 html{
     font-size: 10px;
     background: #FAFBFF;
@@ -19,19 +23,15 @@ h2{
     font-family: 'Poppins', sans-serif;
     font-size: 5.5rem;    
 }
-.h2honest{
-    color:#FACEBF;
-}
-.h2dps{
-    color:#EDAE3A;
-}
+
 h3{
     font-size: 2.5rem;
     font-weight: 200;
 }
 
 p{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 ul{
@@ -40,7 +40,7 @@ ul{
 
 section{
     padding: 5rem 0;
-    margin: 0 15rem;
+    margin: -3rem 15rem;
 }
 
 .container{
@@ -50,10 +50,66 @@ section{
     margin: 0 auto;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button{
+    font-size: 1.60rem;
+    font-weight: 400;
+    font-family: 'Open-Sans', sans-serif;
+    width: 17rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+.button-filled {
+    cursor: pointer;
+    margin: 0 0 2rem 0;
+    height: 45px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #f6dcff, #C5D6FE, #C5D6FE, #EDC7FB);
+    box-shadow: 0 2px 8px 0 rgba(45, 54, 65, 0.15);
+}
+
+.button-border {
+    cursor: pointer;
+    margin: 20px;
+    height: 45px;
+    text-align:center;
+    background-color: #FAFBFF;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right, #f6dcff, #C5D6FE, #C5D6FE, #EDC7FB);
+    border-image-slice: 1;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 2px 8px 0 rgba(45, 54, 65, 0.15);
+}
+
 /* Landing */
-/* .landing{
-    width: 100%;
-} */
 
 .landing.container{
     display: flex;
@@ -70,9 +126,9 @@ section{
 .svg-img{
     display: flex;
     flex: ;
-    /* margin-left: -3rem; */
     margin-right: auto;
     width: 100%;
+    height: 100vh;
 }
 
 .nav-link{
@@ -100,28 +156,81 @@ section{
     align-items: center;
 }
 
+.portfolio-item img{
+    padding: 5rem;
+    width: auto;
+}
+
+.casestudy h1{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: .25rem;
+}
+
+.casestudy h2{
+    font-weight: 500;
+}
+
+.casestudy h3{
+    margin: -4rem 0 -1rem;
+}
+
+.casestudy p{
+    font-size: 1.6rem;
+}
+
+.case-desc{
+    margin-top: -3rem;
+    width: auto;
+}
+
+.casestudy1 h2{
+    color:#FACEBF;
+}
+
+.casestudy2 h2{
+    color:#EDAE3A;
+    line-height: 7rem;
+}
+
 /* About */
 .about h1{
-    
+    letter-spacing: .25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about span{
+    font-weight: 700;
 }
 
 .about h2{
     font-family: 'Poppins', sans-serif;
-    font-size: 5.5rem;
+    font-size: 8rem;
     color:#C5D6FE;
+    margin: -2rem 0 -1rem;
+}
+
+.about p{
+    font-size: 2rem;
+    line-height: 3.5rem;
 }
 
 /* footer */
+
 footer{
-	color: #000;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .copyright{
     width: 100%;
-    height: 15px;
+    height: 5rem;
     text-align: center;
     background-image: linear-gradient(to bottom right, #C5D6FE, #EDC7FB);
     padding: 2rem 0;
-    position: relative;
 }
 
 .up{
