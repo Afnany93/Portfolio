@@ -3,6 +3,15 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Reusable Styles */
 html{
     font-size: 10px;
@@ -12,6 +21,12 @@ html{
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+	color: inherit; 
+	cursor: pointer;
 }
 
 h1{
@@ -39,8 +54,7 @@ ul{
 }
 
 section{
-    padding: 5rem 0;
-    margin: -3rem 15rem;
+    padding: 5rem 0 10rem;
 }
 
 .container{
@@ -109,51 +123,100 @@ button:focus {
     box-shadow: 0 2px 8px 0 rgba(45, 54, 65, 0.15);
 }
 
-/* Landing */
+/* Header Styles */
+/* TODO: change all colors/fonts in this section */
+.header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-image: linear-gradient(to bottom right, #C5D6FE, #EDC7FB);
+    z-index: 999;
+}
 
+.logo{
+    font-family: 'Zeyada', cursive;
+    color: #83649C;
+    font-size: 3rem;
+    padding: 0 1rem;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+.logo:hover{
+	color: #a78ebd;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link{
+    font-family: "Baloo Tamma 2", cursive;
+    text-transform: lowercase;
+    padding: .5rem;
+}
+
+.nav-link:hover{
+	color: #83649C;
+	text-decoration: underline;
+}
+
+.social{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+}
+
+.social-sq{
+	width: 4rem;
+    height: 4rem;
+    border: 2.5px solid #83649C;
+    border-radius: 15%;
+    background-color: #FBF8FF;
+    margin: 0 1.5rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.social-sq i{
+	color: #3F3D56;
+    font-size: 2.25rem;
+    margin: auto;
+}
+
+.social-sq:hover{
+    border: 2.5px solid #3F3D56;
+    background-color: #83649C;
+}
+
+.social-sq i:hover{
+	color: #FBF8FF;
+}
+
+/* Landing */
 .landing.container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.side-header{
-    text-align: center;
-    line-height: 0;
-    margin-bottom: 0rem;
-}
-
 .svg-img{
     display: flex;
-    flex: ;
     margin-right: auto;
     width: 100%;
     height: 100vh;
 }
 
-.nav-link{
-    color: black;
-    padding: .5rem;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.nav-list{
-    margin: -50rem -20rem 0 0;
-    float: right;
-    rotate: -90deg;
-    width: 20%;
-    display: flex;
-    justify-content: space-between;
-    z-index: 100;
-    cursor: pointer;
-}
-
-
 /* Case Studies */
 .portfolio-item{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .portfolio-item img{
@@ -173,7 +236,7 @@ button:focus {
 }
 
 .casestudy h3{
-    margin: -4rem 0 -1rem;
+    margin: 0 0 2rem;
 }
 
 .casestudy p{
@@ -195,6 +258,10 @@ button:focus {
 }
 
 /* About */
+.about{
+    width: 100%;
+}
+
 .about h1{
     letter-spacing: .25rem;
     font-family: 'Poppins', sans-serif;
@@ -231,6 +298,7 @@ footer{
     text-align: center;
     background-image: linear-gradient(to bottom right, #C5D6FE, #EDC7FB);
     padding: 2rem 0;
+    position: relative;
 }
 
 .up{
@@ -247,6 +315,7 @@ footer{
 }
 
 .up i{
+    /* TODO: choose a color */
     color: #ad90b8;
     font-size: 2rem;
     margin: auto;
