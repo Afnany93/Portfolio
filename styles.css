@@ -15,7 +15,8 @@
 /* Reusable Styles */
 html{
     font-size: 10px;
-    background: #FAFBFF;
+   /* background: #FAFBFF;*/
+   background: #FFFFFF;
 }
 
 body{
@@ -136,16 +137,15 @@ button:focus {
 }
 
 .logo{
-    font-family: 'Zeyada', cursive;
-    color: #83649C;
-    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 2rem;
     padding: 0 1rem;
-    text-transform: lowercase;
     cursor: pointer;
 }
 
 .logo:hover{
-	color: #a78ebd;
+	color: #83649C;
 }
 
 .nav-list{
@@ -162,7 +162,7 @@ button:focus {
 
 .nav-link:hover{
 	color: #83649C;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .social{
@@ -175,8 +175,8 @@ button:focus {
 .social-sq{
 	width: 4rem;
     height: 4rem;
-    border: 2.5px solid #83649C;
-    border-radius: 15%;
+    border: 1.8px solid #000000;
+    border-radius: 100%;
     background-color: #FBF8FF;
     margin: 0 1.5rem;
 	display: flex;
@@ -184,7 +184,7 @@ button:focus {
 }
 
 .social-sq i{
-	color: #3F3D56;
+	color: #000;
     font-size: 2.25rem;
     margin: auto;
 }
