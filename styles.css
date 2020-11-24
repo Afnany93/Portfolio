@@ -283,6 +283,55 @@ button:focus {
     line-height: 3.5rem;
 }
 
+/*Contact*/
+form{
+	font-family: 'Poppins', sans-serif;
+    width: 45%;
+    margin: 20px auto 50px;
+}
+
+form label{
+    font-size: 1.5rem;
+}
+
+input,
+select,
+textarea{
+	width: 100%;
+    padding: 1rem;
+    margin-bottom: 10px;
+    background-color: #FAFBFF;
+    border: 1px solid transparent;
+    border-image: linear-gradient(to right, #f6dcff, #C5D6FE, #C5D6FE, #EDC7FB);
+    border-image-slice: 1;
+    background-size: 300% 100%;
+}
+
+input[type="submit"]{
+	cursor: pointer;
+    margin: 0 0 2rem 0;
+    height: 45px;
+    width: 45%;
+    float: right;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #f6dcff, #C5D6FE, #C5D6FE, #EDC7FB);
+    box-shadow: 0 2px 8px 0 rgba(45, 54, 65, 0.15);
+}
+
+input[type="submit"]:hover{
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
 /* footer */
 
 footer{
