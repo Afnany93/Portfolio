@@ -155,7 +155,7 @@ button:focus {
 }
 
 .nav-link{
-    font-family: "Baloo Tamma 2", sans-serif;
+    font-family: "Baloo Tamma 2",'Poppins', sans-serif;
     text-transform: lowercase;
     padding: .5rem;
 }
