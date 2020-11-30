@@ -285,7 +285,10 @@ button:focus {
 
 /*Contact*/
 form{
-	font-family: 'Poppins', sans-serif;
+    font-size: 1.60rem;
+    font-weight: 400;
+    font-family: 'Open-Sans', sans-serif;
+    border-radius: 5px;
     width: 45%;
     margin: 20px auto 50px;
 }
