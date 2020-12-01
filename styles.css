@@ -201,13 +201,13 @@ button:focus {
 }
 
 .social-sq:hover{
-    border: 2.5px solid #3F3D56;
-    background-color: #d2abe0;
+    border: 2.5px solid #2d4177;
+    background-color: #FFFFFF;
     /* TO DO */
 }
 
 .social-sq i:hover{
-	color: #FBF8FF;
+	color: #2d4177;
 }
 
 /* Landing */
@@ -433,7 +433,7 @@ footer{
 
     .casestudy2 h2{
         line-height: 4.75rem;
-        margin-top: 15rem;
+        margin-top: 1rem;
     }
 
     form{
