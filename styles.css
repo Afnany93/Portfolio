@@ -130,6 +130,10 @@ button:focus {
     box-shadow: 0 2px 8px 0 rgba(45, 54, 65, 0.15);
 }
 
+.mobile-link{
+    display: none;
+}
+
 /* Header Styles */
 /* TODO: change all colors/fonts in this section */
 .header{
@@ -445,7 +449,12 @@ footer{
 
 @media screen and (max-width: 420px) {
     /* General */
-    
+    .desktop-link{
+        display: none;
+    }
+    .mobile-link{
+        display: inline;
+    }
      /* Landing */
     .header-contact{
         display: none;
