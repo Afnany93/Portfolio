@@ -29,6 +29,11 @@
                     </li>
                     <li>
                         <div class="social header-contact">
+                            <!-- <a href="https://dribbble.com/#">
+                                <div class="social-sq">
+                                    <i class="fab fa-dribbble"></i>
+                                </div>
+                            </a> -->
                             <a href="https://www.behance.net/AfnanYousef">
                                 <div class="social-sq">
                                     <i class="fab fa-behance"></i>
@@ -42,17 +47,35 @@
                         </div>
                     </li>
                 </ul>  
-            </div>
-        </nav>
-    </div>
+            </nav>
+        </div> 
 </header>
 
-<section class="landing">
-        <div class="container">
-            <img src="./images/top.svg" alt="" class="svg-img">
-        </div>
-</section>
+<!-- <section class="hero"> -->
+    <div class="container">
+    <img src="./images/top.svg" alt="" class="svg-img">
+    </div>
+<!-- </section> -->
 
+<!-- <section class="landing"> -->
+        <section class="mobile-social social">
+            <!-- <a href="https://dribbble.com/#">
+                <div class="social-sq">
+                    <i class="fab fa-dribbble"></i>
+                </div>
+            </a> -->
+            <a href="https://www.behance.net/AfnanYousef">
+                <div class="social-sq">
+                    <i class="fab fa-behance"></i>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/afnanayousef/">
+                <div class="social-sq">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </a>
+        <!-- </div> -->
+</section>
 
 <a name="portfolio"></a>
     <section class="casestudy">
@@ -63,20 +86,27 @@
                     <div class="case-desc">
                         <h2>Honest Beauty</h2>
                         <h3>Website Design</h3>
-                        <p>We enhanced the user's experience by including an online quiz that helps you find your perfect shade of foundation. We also included suggestions for products that would pair well with your match. <br>Tools : Figma, Miro</p>
-                        <button class="button-filled" onclick="window.location.href='https://xd.adobe.com/view/ae093280-916b-413f-b437-196f672bcabf-fb5a/?fullscreen';">View Project</a></button>
-                        <button class="button-border" onclick="window.location.href='https://drive.google.com/file/d/1y-QQaF0PtbmM1BsX536Rho9aLlk6D9O5/view';">View Prototype</a></button>
+                        <p>We enhanced the user's experience by including an online quiz that helps you find your perfect shade of foundation. We also included suggestions for products that would pair well with your match.</p>
+                        <p class="tools">Tools : Figma, Miro</p>
+                        <div class="portbuttons"> 
+                            <button class="button-filled" onclick="window.location.href='https://xd.adobe.com/view/ae093280-916b-413f-b437-196f672bcabf-fb5a/?fullscreen';">View Project</a></button>
+                            <button class="button-border" onclick="window.location.href='https://drive.google.com/file/d/1y-QQaF0PtbmM1BsX536Rho9aLlk6D9O5/view';">View Prototype</a></button>
+                        </div>
                     </div>
             </div>
             <div class="portfolio-item casestudy2">
+                <img src="./images/dps.svg" alt="" class="mobilecaseimg">
                 <div class="case-desc">
                     <h2>Texas Department <br>of Public Safety</h2>
                     <h3>Website and iOS App Design</h3>
-                    <p>We revamped the task of renewing a drivers license from start to finish in order to enhance the iOS and Desktop experience. <br> Tools : Adobe XD, Miro</p>
-                    <button class="button-filled" onclick="window.location.href='https://xd.adobe.com/view/2f2409e5-5f56-4833-94fe-1d4996000a8d-7a77/?fullscreen';"> View Project </button>
-                    <button class="button-border" onclick="window.location.href='https://www.youtube.com/watch_popup?v=xZS7Fu5PNfA&feature=youtu.be';"> View Prototype </button>
+                    <p>We revamped the task of renewing a drivers license from start to finish in order to enhance the iOS and Desktop experience.</p>
+                    <p class="tools">Tools : Adobe XD, Miro</p>
+                    <div class="portbuttons">
+                        <button class="button-filled" onclick="window.location.href='https://xd.adobe.com/view/2f2409e5-5f56-4833-94fe-1d4996000a8d-7a77/?fullscreen';"> View Project </button>
+                        <button class="button-border" onclick="window.location.href='https://www.youtube.com/watch_popup?v=xZS7Fu5PNfA&feature=youtu.be';"> View Prototype </button>
+                    </div>
                 </div>
-                <img src="./images/dps.svg" alt="">
+                <img src="./images/dps.svg" alt="" class="desktopcaseimg">
             </div>
         </div>
     </section>
@@ -96,10 +126,13 @@
     <section class="contact">
         <div class="container">
             <h2>Is it a match?</h2>
-            <h3>Let's connect</h3>
-            <button class="button-border" onclick="window.location.href='https://download1338.mediafire.com/oiewbgkcfhog/vetr2r96viblrzm/2020+CV-Afnan+Yousef.pdf';">Download CV</button>
+            <div class="connect">
+                <h3>Let's connect</h3>
+                <button class="button-filled" onclick="window.location.href='https://download1338.mediafire.com/oiewbgkcfhog/vetr2r96viblrzm/2020+CV-Afnan+Yousef.pdf';">Download CV</button>
+            </div>
             <div class="contactform">
-                <form action="https://formspree.io/f/xoqpnvpy" method="POST">            <label for="name">Name:</label>
+                <form action="https://formspree.io/f/xoqpnvpy" method="POST"">            
+                    <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="_replyto" placeholder="Enter your email..." required>
